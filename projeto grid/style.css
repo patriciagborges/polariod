@@ -1,0 +1,41 @@
+*{
+    /*Resete padrão*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0a0d2d;
+    /*Cor do fundo da página*/
+}
+.container{
+    margin: auto;
+    /*Centraliza o container*/
+    max-width: 1000px;
+    /*quebrar em colunas:*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*Quebrando em varias colunas */
+    grid-gap: 20px;
+    /*Gera um espaço entre as colunas e linhas*/
+    justify-content: center;
+    /*justify alinha hotizontalmente, vertical é align*/
+    padding: 20px;
+}
+.polaroid{
+    background-color: white;
+    padding: 15px 15px 40px;
+}
+.caption{
+    text-align: center;
+}
+h2{
+    font-family: 'Parisienne', cursive;
+}
+.photo{
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    /*O objeto vai caber no espaço seguindo a regra*/
+
+}
